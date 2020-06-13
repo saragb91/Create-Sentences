@@ -1,0 +1,40 @@
+.containerDetails{
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    padding: 150px;
+}
+
+.containerDetails:after{
+    content: '';
+    min-height: 92.2vh;
+    background-image: url('https://image.freepik.com/vector-gratis/concepto-landing-page-resenas_52683-20700.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.55;
+    top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; 
+}
+
+.divDetails{
+    text-align: center;
+    filter: brightness(0.5);
+    font-weight: bold;
+    position:relative;
+}
+
+.h2Details{
+    font-size: 60px;
+}
+
+.h3Details{
+    font-size: 35px;
+}
+
+.pDetails{
+    font-size: 25px;
+}
+
+.LinkAllSentences{
+    text-align: end;
+    padding: 20px;
+}

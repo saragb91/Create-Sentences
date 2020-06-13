@@ -1,0 +1,22 @@
+.sentencesListDiv{
+    background-image: url('https://image.freepik.com/vector-gratis/conjunto-burbujas-discurso_53876-90538.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sentencesListH3{
+    font-size: 50px;
+    color: #0d4b68;
+    margin: 80px 0 80px;
+    text-align: center;
+}
+
+.rowList{
+    margin:0
+}
+
+.LinktoForm{
+    text-align: end;
+    padding: 20px 20px 0 0;
+    font-size: 18px;
+}

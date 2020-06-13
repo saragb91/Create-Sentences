@@ -1,0 +1,28 @@
+.completeCard{
+    width: 80%;
+    margin:50px auto;
+    padding: 20px;
+    border: rgb(5, 51, 65) 1px dotted;
+    transition: ease-in-out 0.9s;
+}
+
+.completeCard:hover{
+    background-color: rgb(211, 232, 238);
+}
+
+.linkCard:hover{
+    text-decoration-color: rgb(132, 169, 199)
+}
+
+.titleCard, .descriptionCard, .nameCard{
+    text-align: center;
+}
+
+.titleCard{
+    color:rgb(8, 44, 68);
+    font-size: 30px;
+}
+
+.descriptionCard{
+    font-size: 22px;
+}
