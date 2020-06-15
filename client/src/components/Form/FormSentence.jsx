@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import FormServices from '../../services/form.services'
 import Error from '../Error'
 import './FormSentence.css'
-class FormSentence extends Component {
 
+
+class FormSentence extends Component {
     constructor(){
         super()
         this.state={
@@ -30,7 +30,10 @@ class FormSentence extends Component {
 
     postEvent = () => {
         this.services.newSentence(this.state.sentence)
-            .then(() => this.setState( this.state.sentence ))
+            .then(() => {
+                this.setState( this.state.sentence )
+                this.props.history.push('/allSentences')
+            })
             .catch(err=> console.log({err}))
         }
 
@@ -40,15 +43,13 @@ class FormSentence extends Component {
     }
 
     render(){
+
         return(
-            <>
-                <div className='linkList'>
-                    <Link to={'/allSentences'}>Todas las frases</Link>
-                </div>
+            <>      
             <div className='mainDiv'>
 
                 <h2 className='h2Form'>Escriba su frase</h2>
-                
+
                 <Form onSubmit={this.handleSubmit} className='formSentence'>
                 <Form.Group>
                     <Form.Label>Nombre</Form.Label>
@@ -92,9 +93,8 @@ class FormSentence extends Component {
                 {(this.state.sentence.name.trim() === '' || this.state.sentence.title.trim() === '' || this.state.sentence.description.trim() === '' ) ? <Error message='Complete todos los campos'/>
                 :
                     <Button type='submit'
-                            onClick={this.handleSubmit}>
-                                Añadir
-                    </Button>
+                            onClick={this.handleSubmit}
+                            className='buttonForm'>Añadir</Button> 
                 }
                 </Form>
             </div>

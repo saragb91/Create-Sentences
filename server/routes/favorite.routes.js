@@ -4,9 +4,8 @@ const router = express.Router()
 const Favorites = require('../models/Favorites.model')
 
 router.get('/getFavorites', (req, res, next) => {
-
     Favorites.find()
-        .populate("sentenceId")
+        .populate('sentenceId')
         .then(allFavorites => res.json(allFavorites))
         .catch(err=> next(err))
 })

@@ -1,11 +1,10 @@
 import React, {Component} from 'react'
-import FavoritesServices from '../services/favorite.services'
+import FavoritesServices from '../../services/favorite.services'
 import FavoriteCard from './FavoriteCard'
+import './FavoriteList.css'
 
 class FavoriteList extends Component {
-
     constructor(props) {
-        console.log(props)
         super(props)
         this.state = {
             favorites: [],
@@ -21,13 +20,15 @@ class FavoriteList extends Component {
             .catch(err => console.log(err))
     }
     render() {
-        console.log(this.state.favorites)
+
         return(
             this.state.favorites?
-            <>
-                <h1>favoritos</h1>
-                {this.state.favorites.map(elm => <FavoriteCard key={elm._id} {...elm}/> )}
-            </>
+            <div className='divFavorite'>
+                <div className='subDivFavorite'>
+                    <h1 className='h1Favorite'>Frases favoritas</h1>
+                    {this.state.favorites.map(elm => <FavoriteCard key={elm._id} {...elm}/> )}
+                </div>
+            </div>
             :null
         )
     }

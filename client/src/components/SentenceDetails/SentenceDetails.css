@@ -11,7 +11,7 @@
     background-image: url('https://image.freepik.com/vector-gratis/concepto-landing-page-resenas_52683-20700.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.55;
+    opacity: 0.4;
     top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; 
 }
 
@@ -24,10 +24,13 @@
 
 .h2Details{
     font-size: 60px;
+    margin: 50px 0;
+    font-weight: bold;
 }
 
 .h3Details{
     font-size: 35px;
+    margin: 50px 0;
 }
 
 .pDetails{

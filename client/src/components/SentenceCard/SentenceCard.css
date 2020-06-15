@@ -2,24 +2,24 @@
     width: 80%;
     margin:50px auto;
     padding: 20px;
-    border: rgb(5, 51, 65) 1px dotted;
-    transition: ease-in-out 0.9s;
+    border: black 1px dotted;
+    transition: ease-in-out 0.6s;
 }
 
 .completeCard:hover{
-    background-color: rgb(211, 232, 238);
+    background-color: #fdc33cda;
 }
 
 .linkCard:hover{
-    text-decoration-color: rgb(132, 169, 199)
+    text-decoration-color: black
 }
 
 .titleCard, .descriptionCard, .nameCard{
     text-align: center;
+    color: black;
 }
 
 .titleCard{
-    color:rgb(8, 44, 68);
     font-size: 30px;
 }
 

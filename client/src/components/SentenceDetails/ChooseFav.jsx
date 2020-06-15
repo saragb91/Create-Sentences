@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Button from 'react-bootstrap/Button'
-
 import FavoriteServices from '../../services/favorite.services'
+import './ChooseFav.css'
 
 
 class ChooseFav extends Component{
@@ -13,15 +13,15 @@ class ChooseFav extends Component{
         }
     }
     saveSentence = () => {
-        console.log(this.props.sentenceId)
-
+        
         let newFav = {
             ...this.state.favorite,
-            sentenceId: this.props.sentenceId
+            sentenceId: this.props.sentenceId,
         }
-            this.FavoriteServices.saveSentence(newFav.sentenceId)
-                .then(() => this.props.refreshList)
-                .catch(err => console.log(err))                 
+        
+        this.FavoriteServices.saveSentence(newFav.sentenceId)
+        .then(() => this.props.refreshList)
+        .catch(err => console.log(err))                 
     }
 
     handleSubmit = e => {
@@ -32,10 +32,11 @@ class ChooseFav extends Component{
                     
     render() {
         return (
-        
-        <Button onClick={this.handleSubmit} className="buttonDetail">
-            Añadir a favoritos
-        </Button> 
+        <div className='divButton'>
+            <Button onClick={this.handleSubmit} className="buttonDetail">
+                Añadir a favoritos
+            </Button>
+        </div>
         )
 }
 }

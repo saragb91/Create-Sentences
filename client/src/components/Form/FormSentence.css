@@ -10,9 +10,26 @@
 .h2Form{
     text-align: center;
     margin-bottom: 80px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .linkList{
     text-align: end;
     margin-bottom: 50px;
+}
+
+.buttonForm{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px 40px;
+    border-color: black;
+    margin-top: 20px;
+    transition: ease-in-out 0.7s;
+}
+
+.buttonForm:hover{
+    background-color: black;
+    color: #ffeb3b;
 }

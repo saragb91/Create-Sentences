@@ -1,0 +1,19 @@
+.divFavorite:after{
+    content:'';
+    background-image: url('https://image.freepik.com/vector-gratis/globos-diferentes-expresiones_23-2148261176.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 92.2vh;
+    opacity: 0.20;
+    top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; 
+}
+
+.subDivFavorite{
+    text-align: center;
+}
+
+.h1Favorite{
+    margin: 100px 0;
+    font-size: 50px;
+    font-weight: bold;
+}

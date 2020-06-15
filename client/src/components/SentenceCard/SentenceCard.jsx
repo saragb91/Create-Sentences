@@ -6,25 +6,6 @@ import './SentenceCard.css'
 
 const SentenceCard = ({name,surname,title, description, _id, sentenceId}) => {
 
-    // handleSubmit = e => {
-    //     e.preventDefault();
-    //      console.log('hola')
-    // };
-  
-
-
-    // this.FavoritesServices = new FavoritesServices()
-    // postFavorite = () => {
-    //     let newFav= {
-    //         sentenceId : sentenceId
-    //     }
-    //     this.FavoritesServices.postFavorites(newFav)
-            
-    // }
-    
-    // handleSubmit(letter) {
-    //     this.setState({ justClicked: letter });
-    //   }
 
     return ( 
         <Col md={6}>
@@ -34,7 +15,6 @@ const SentenceCard = ({name,surname,title, description, _id, sentenceId}) => {
                         <Card.Text className='descriptionCard'>{description}</Card.Text>
                         <Card.Text className='nameCard'>{name} {surname}</Card.Text>
                     </Link>
-            
                 </Card>
         </Col>
      );
